@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="4.346052">
+<testcase classname="Testing for Users" name="Health check with wrong url" time="3.622596">
+<system-out><![CDATA[Given Request headers.......................................................passed
+And Request body as json....................................................passed
+When user hits "users" post api.............................................passed
+Then the status code is 201.................................................passed
+And Response should contain.................................................passed
+And get the id from the response............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing for Users" name="Health check with wrong url" time="0.723456">
+<system-out><![CDATA[Given Request headers.......................................................passed
+And Request body as json....................................................passed
+When user hits "users" post api.............................................passed
+Then the status code is 201.................................................passed
+And Response should contain.................................................passed
+And get the id from the response............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

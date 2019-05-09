@@ -1,0 +1,450 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1147274615,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 167971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.setProperties()"
+            }
+          },
+          {
+            "result": {
+              "duration": 969453,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.request_with_baseurl()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Health check with wrong url",
+        "description": "",
+        "id": "testing-for-users;health-check-with-wrong-url",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 274977656,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Request headers",
+            "match": {
+              "location": "MyStepdefs.request_headers_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34878080,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Request body as json",
+            "match": {
+              "location": "MyStepdefs.request_body_as_json(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "fileName",
+                  "post-create-user.json"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1491077008,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 19,
+                "value": "#|name| randomString |"
+              },
+              {
+                "line": 20,
+                "value": "#|job | automation|"
+              }
+            ],
+            "line": 21,
+            "name": "user hits \"users\" post api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "users",
+                  "offset": 11
+                },
+                {
+                  "val": "post",
+                  "offset": 18
+                }
+              ],
+              "location": "MyStepdefs.api_request_is_made(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73819271,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefs.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 581139081,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Response should contain",
+            "match": {
+              "location": "MyStepdefs.response_should_contain_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "name",
+                  "abc"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18292441,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "get the id from the response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 8
+                }
+              ],
+              "location": "MyStepdefs.get_the_value_from_response(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@TC-1"
+          },
+          {
+            "line": 10,
+            "name": "@regression"
+          },
+          {
+            "line": 10,
+            "name": "@reqres"
+          }
+        ]
+      }
+    ],
+    "name": "Testing for Users",
+    "description": "",
+    "id": "testing-for-users",
+    "keyword": "Feature",
+    "uri": "feature/team.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2157438,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 149352,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.setProperties()"
+            }
+          },
+          {
+            "result": {
+              "duration": 254943,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.request_with_baseurl()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Health check with wrong url",
+        "description": "",
+        "id": "testing-for-users;health-check-with-wrong-url",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4854197,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Request headers",
+            "match": {
+              "location": "MyStepdefs.request_headers_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 593520881,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Request body as json",
+            "match": {
+              "location": "MyStepdefs.request_body_as_json(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "fileName",
+                  "post-create-user.json"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "name",
+                  "randomString"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "job",
+                  "automation"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35306416,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user hits \"users\" post api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "users",
+                  "offset": 11
+                },
+                {
+                  "val": "post",
+                  "offset": 18
+                }
+              ],
+              "location": "MyStepdefs.api_request_is_made(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3911529,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefs.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38200482,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Response should contain",
+            "match": {
+              "location": "MyStepdefs.response_should_contain_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "value"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "name",
+                  "randomString"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45101139,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "get the id from the response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 8
+                }
+              ],
+              "location": "MyStepdefs.get_the_value_from_response(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TC-1"
+          },
+          {
+            "line": 4,
+            "name": "@regression"
+          },
+          {
+            "line": 4,
+            "name": "@reqres"
+          }
+        ]
+      }
+    ],
+    "name": "Testing for Users",
+    "description": "",
+    "id": "testing-for-users",
+    "keyword": "Feature",
+    "uri": "feature/users.feature"
+  }
+]

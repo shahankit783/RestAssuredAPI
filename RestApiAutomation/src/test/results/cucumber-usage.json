@@ -1,0 +1,134 @@
+[
+  {
+    "source": "^user hits \"(.*?)\" (.*?) api$",
+    "steps": [
+      {
+        "name": "user hits \"users\" post api",
+        "aggregatedDurations": {
+          "average": 0.763191712,
+          "median": 0.763191712
+        },
+        "durations": [
+          {
+            "duration": 1.491077008,
+            "location": "feature/team.feature:21"
+          },
+          {
+            "duration": 0.035306416,
+            "location": "feature/users.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Request headers$",
+    "steps": [
+      {
+        "name": "Request headers",
+        "aggregatedDurations": {
+          "average": 0.139915926,
+          "median": 0.139915926
+        },
+        "durations": [
+          {
+            "duration": 0.274977656,
+            "location": "feature/team.feature:12"
+          },
+          {
+            "duration": 0.004854197,
+            "location": "feature/users.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the status code is (\\d+)$",
+    "steps": [
+      {
+        "name": "the status code is 201",
+        "aggregatedDurations": {
+          "average": 0.0388654,
+          "median": 0.0388654
+        },
+        "durations": [
+          {
+            "duration": 0.073819271,
+            "location": "feature/team.feature:22"
+          },
+          {
+            "duration": 0.003911529,
+            "location": "feature/users.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Response should contain$",
+    "steps": [
+      {
+        "name": "Response should contain",
+        "aggregatedDurations": {
+          "average": 0.309669781,
+          "median": 0.309669781
+        },
+        "durations": [
+          {
+            "duration": 0.581139081,
+            "location": "feature/team.feature:23"
+          },
+          {
+            "duration": 0.038200482,
+            "location": "feature/users.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^get the (.*?) from the response$",
+    "steps": [
+      {
+        "name": "get the id from the response",
+        "aggregatedDurations": {
+          "average": 0.03169679,
+          "median": 0.03169679
+        },
+        "durations": [
+          {
+            "duration": 0.018292441,
+            "location": "feature/team.feature:26"
+          },
+          {
+            "duration": 0.045101139,
+            "location": "feature/users.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Request body as json$",
+    "steps": [
+      {
+        "name": "Request body as json",
+        "aggregatedDurations": {
+          "average": 0.31419948,
+          "median": 0.31419948
+        },
+        "durations": [
+          {
+            "duration": 0.03487808,
+            "location": "feature/team.feature:16"
+          },
+          {
+            "duration": 0.593520881,
+            "location": "feature/users.feature:10"
+          }
+        ]
+      }
+    ]
+  }
+]
